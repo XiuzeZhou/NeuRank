@@ -13,7 +13,7 @@ $ python NeuRanks.py --path datasets/ --data_name Enzyme --epoches 100 --batch_s
 
 $ python pNeuRank.py --path datasets/ --data_name Enzyme --epoches 40 --batch_size 64 --num_factors 64 --layers [32] --reg 0.00001 --num_neg 4 --lr 0.001 --min_loss 0.1 --cv 10 --mode 0
 
-**Parameter description**：
+## Parameter description：
 - path：Input data path.
 - data_name：Name of dataset
 - epoches：Number of epoches.
