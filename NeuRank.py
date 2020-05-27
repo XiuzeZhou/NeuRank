@@ -215,7 +215,7 @@ def train(model, data_list, drugs_num, targets_num, epoches=40, cv=10, sample_si
                 aupr_list.append(aupr_score)
                 print('epoch=%d, loss=%.4f, AUC=%.4f, AUPR=%.4f' %(epoch,loss_records[-1],auc_score, aupr_score))
 
-                if loss_records[-1]<0.01:
+                if loss_records[-1]<min_loss:
                     break
             cv_auc_list.append(auc_list[-1])
             cv_aupr_list.append(aupr_list[-1])
@@ -247,7 +247,7 @@ def train(model, data_list, drugs_num, targets_num, epoches=40, cv=10, sample_si
                 aupr_list.append(aupr_score)
                 print('epoch=%d, loss=%.4f, AUC=%.4f, AUPR=%.4f' %(epoch,loss_records[-1],auc_score, aupr_score))
 
-                if loss_records[-1]<0.01:
+                if loss_records[-1]<min_loss:
                     break
             cv_auc_list.append(auc_list[-1])
             cv_aupr_list.append(aupr_list[-1])
@@ -279,7 +279,7 @@ def train(model, data_list, drugs_num, targets_num, epoches=40, cv=10, sample_si
                 aupr_list.append(aupr_score)
                 print('epoch=%d, loss=%.4f, AUC=%.4f, AUPR=%.4f' %(epoch,loss_records[-1],auc_score, aupr_score))
 
-                if loss_records[-1]<0.01:
+                if loss_records[-1]<min_loss:
                     break
             cv_auc_list.append(auc_list[-1])
             cv_aupr_list.append(aupr_list[-1])
