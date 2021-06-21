@@ -1,6 +1,7 @@
 # NeuRank
 NeuRank: Learning to Ranking with Neural Networks for Drug-Target Interaction Prediction
 
+**主要库版本：** tensorflow 1.14.0 和 pytorch 1.6.0
 - **Run NeuRank**:
 
 $ python NeuRank.py --path datasets/ --data_name Enzyme --epoches 40 --batch_size 64 --num_factors 64 --layers [32,16] --reg 0.00001 --num_neg 4 --lr 0.001 --min_loss 0.01 --cv 10 --mode 0
@@ -26,3 +27,7 @@ $ python pNeuRank.py --path datasets/ --data_name Enzyme --epoches 40 --batch_si
 - min_loss: The minimum value for stopping loss function.
 - cv: K-fold Cross Validation.
 - mode: the mode for training: 0 -> train for drug-target pairs; 1 -> train for new drugs; 2 -> train for new target
+
+**Homepage:** http://zhouxiuze.com
+
+**个人博客：** http://snailwish.com/
